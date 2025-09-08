@@ -1,0 +1,145 @@
+
+body{
+    height: 100vh;
+    width:100%;
+    margin:0%;
+ background-color: black; 
+}
+
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:aliceblue
+}
+
+.contadorParrafo{
+    color:aliceblue
+}
+
+.instrucciones{
+    margin:0px;
+    color: aliceblue;
+}
+
+.contenedor-lista{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    border:0.063em solid aquamarine;
+    border-radius: 0.625em;
+    margin-left: 20%;
+    margin-right:20%;
+}
+
+.listas{
+    list-style-type: none;
+    padding: 0em;
+    margin:0em;
+    margin-top:0.563em;
+    margin-bottom: 0.563em;
+}
+
+.contador{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.contadorParrafo{
+    margin:0;
+    margin-bottom: 30px;
+}
+
+.resultados{
+    font-weight: 1000;
+    font-size: 1.5em;
+    margin-top: 0;
+    text-decoration: underline;
+} 
+
+.imagenes{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline ;
+    gap: 5.70em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .9em;
+    padding: .05em;
+}
+
+.nombreComputadora{
+    color:antiquewhite;
+    padding-left: 30px;
+    border: 2px solid aqua;
+    border-radius:0.314em;
+}
+
+.nombreJugador{
+    color:antiquewhite;
+    padding-left: 49px;
+    border: 2px solid aqua;
+    border-radius:0.314em;
+}
+
+.imagen{
+    border:0.063em solid aqua;
+    border-radius: 0.625em;
+    width:150px;
+    height: 150px;;
+    margin-top: 1em;
+    
+}
+
+
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25em;
+    margin-bottom:  1.25em ;
+}
+
+.btn{
+ padding: 0.625em;
+ border-radius: 0.625em;
+ border-color:cornsilk;
+ background-color: lch(61.08% 33.28 214.82 / 0.8);
+ font-weight: 700;
+}
+
+button:hover{
+    background-color: aqua;
+    border-color: aqua;
+    border-radius: 0.625em;
+    
+}
+
+.contador{
+    color: aliceblue;
+}
+
+.boton-reiniciar{
+ display:flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-left:.313em;
+ 
+}
+
+.reiniciar{
+    padding: .625em 1.875em .625em 1.875em;
+    padding: 0.625em;
+    border-radius: 0.625em;
+    border-color:cornsilk;
+    background-color: lch(61.08% 33.28 214.82 / 0.8);
+    font-weight: 700;
+}

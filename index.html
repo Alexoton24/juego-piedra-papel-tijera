@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra,Papel,Tijera</title>
+    <link rel="styleSheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-texto">
+        <h1>
+            Juego de piedra papel o tijera
+        </h1>
+
+        <h2>El juego consiste en que la computadora selecciona una opcion al azar y tu seleccionas otra, despues se enfrentan las dos opciones y veremos cual es la ganadora.</h2>
+    </div>
+    <div class="contenedor-lista">  
+        <h3 class="instrucciones">
+            <strong>
+                Instrucciones:
+            </strong>
+        </h3>
+        
+        <ol class="listas">
+            <li>Haz tu selección</li>
+            <li>La ronda tiene una duración de 10 turnos</li>
+            <li>Al terminar presiona reiniciar</li>
+        </ol>
+    </div>  
+
+    <div class="imagenes">
+        <div>
+            <p class="nombreComputadora">Computadora</p>
+            <img id="computadora" class="imagen" src="assets/juego.jpg">
+        </div>
+        <div class="contador">
+            <p id="perdiste" class="contadorParrafo">Perdiste 0</p>
+            <p id="empate" class="contadorParrafo">Empate 0</p>
+            <p id="ganaste" class="contadorParrafo">Ganaste 0 </p>
+            <p id="results" class="resultados"></p>
+        </div>   
+        
+           <!-- <p id="results" class="resultados"></p> -->
+        <div>
+            <p class="nombreJugador">Usuario</p>
+            <img id="usuarioImagen" class="imagen" src="assets/juego.jpg">
+        </div>
+    </div>
+    <div  id="contenedorBotones" class="contenedor-botones">
+        <button class="btn" id="btnPiedra">Piedra</button>
+        <button  class="btn"id="btnPapel">Papel</button>
+        <button class="btn" id="btnTijera">Tijera</button>
+    </div>
+
+    <div class="boton-reiniciar">
+        <button id="reiniciar" class="reiniciar">Reiniciar</button>
+    </div>
+
+   
+ 
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
