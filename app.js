@@ -2,7 +2,7 @@ let btnPiedra = document.getElementById("btnPiedra");
 let btnPapel = document.getElementById("btnPapel");
 let btnTijeras = document.getElementById("btnTijera");
 let btnReiniciar = document.getElementById("reiniciar");
-let opciones = ["piedra", "papel", "tijeras"];
+let opciones = ["piedra", "papel", "tijera"];
 let computadora = document.getElementById("computadora");
 let usuario = document.getElementById("usuarioImagen");
 let parrafo = document.getElementById("results");
@@ -22,7 +22,11 @@ function seleccionComputadora(){
 }
 
 function resultados(eleccionUsuario){
-    let eleccionComputadora = seleccionComputadora()
+    let tijera = "tijera";
+    let piedra = "piedra";
+    let papel = "papel";
+    let eleccionComputadora = seleccionComputadora(tijera,piedra,papel)
+    
     if(eleccionUsuario === eleccionComputadora){
         ++contadorEmpate
         parrafo.textContent = "Empate"
@@ -93,9 +97,10 @@ btnPapel.addEventListener("click",()=>{
  })
 btnTijeras.addEventListener("click",()=>{
     resultados("tijera")
-    usuario.src = "assets/tijeras.jpg"
+    usuario.src = "assets/tijera.jpg"
 })
 btnReiniciar.addEventListener("click",()=>{
+    
     contadorGanaste = 0;
     contadorEmpate = 0;
    contadorPerdiste = 0;
